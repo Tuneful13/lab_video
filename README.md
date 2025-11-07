@@ -1,4 +1,4 @@
-1: ./install.md
+1: ./install.sh
 
 2: Meter las carpetas en mega.pytorch
 
