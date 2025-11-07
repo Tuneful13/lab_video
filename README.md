@@ -1,13 +1,11 @@
-1.
+1: ./install.md
 
-./install.md
+2: Meter las carpetas en mega.pytorch
 
-2. Meter las carpetas en mega.pytorch
-
-3. Hacer:
+3: Hacer:
 conda activate MEGA
 
-4. Potenciales comentarios
+4: Potenciales comentarios
 
 
 ### mega.pytorch/mega_core/layers/nms.py:
