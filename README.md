@@ -1,11 +1,13 @@
-1: ./install.sh
+1.
 
-2: Meter las carpetas en mega.pytorch
+./install.md
 
-3: Hacer:
+2. Meter las carpetas en mega.pytorch
+
+3. Hacer:
 conda activate MEGA
 
-4: Potenciales comentarios
+4. Potenciales comentarios
 
 
 ### mega.pytorch/mega_core/layers/nms.py:
@@ -13,21 +15,16 @@ conda activate MEGA
 De:
 
 ```
-from mega_core import _C
-from apex import amp
+(5) from apex import amp
 
-# Only valid with fp32 inputs - give AMP the hint
-nms = amp.float_function(_C.nms)
+(8) nms = amp.float_function(_C.nms)
 ```
 A esto:
 
 ```
-from mega_core import _C
-#from apex import amp
+(5) #from apex import amp
 
-# Only valid with fp32 inputs - give AMP the hint
-#nms = amp.float_function(_C.nms)
-nms = _C.nms
+(8) nms = _C.nms
 ```
 
 ### mega_core/layers/roi_align.py:
@@ -35,14 +32,16 @@ nms = _C.nms
 De:
 
 ```
-from apex import amp
-@amp.float_function
+(10) from apex import amp
+
+(57) @amp.float_function
 ```
 
 A esto:
 ```
-# from apex import amp
-#@amp.float_function
+(10) # from apex import amp
+
+(57) #@amp.float_function
 ```
 
 ### mega_core/layers/roi_pool.py:
@@ -50,14 +49,16 @@ A esto:
 De:
 
 ```
-from apex import amp
-@amp.float_function
+(10) from apex import amp
+
+(56) @amp.float_function
 ```
 
 A esto:
 ```
-# from apex import amp
-# @amp.float_function
+(10) # from apex import amp
+
+(56) # @amp.float_function
 ```
 
 ### demo/predictor.py:
@@ -65,12 +66,12 @@ A esto:
 De:
 
 ```
-image, s, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2
+(611)                image, s, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2
 ```
 
 A esto:
 ```
-image, s, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2
+(611)                image, s, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2
 ```
 
 ### Ejecutamos lo siguiente:
