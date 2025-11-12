@@ -1,4 +1,6 @@
+
 1.
+chmod +x install.sh
 
 ./install.sh -y
 
