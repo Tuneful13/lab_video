@@ -1,9 +1,10 @@
 
 1.Abrir una terminal donde tengas el archivo install.sh y ejecutar:
+
+```
 chmod +x install.sh
-
 ./install.sh
-
+```
 
 2. Ejecutar:
 ```
@@ -14,24 +15,29 @@ conda init
 ```
 conda activate MEGA
 ```
+4. Descargar los modelos de drive:
+https://drive.google.com/file/d/1W17f9GC60rHU47lUeOEfU--Ra-LTw3Tq/view
 
-3. ### Ejecutamos lo siguiente:
+https://drive.google.com/file/d/1ZnAdFafF1vW9Lnpw-RPF1AD_csw61lBY/view
+
+4. ### Ejecutamos lo siguiente:
+
+4.1.1. Para base:
 ```
 python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/image_folder --output-folder visualization/base --output-video
 ```
-
-For frames:
+4.1.2. For frames:
 ```
 python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/image_folder --output-folder visualization/base
 ```
 
 
-4. Para mega:
+4.2.1. Para mega:
 ```
 python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/image_folder --output-folder visualization/mega --output-video
 ```
 
-For frames:
+4.2.2. For frames:
 ```
 python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/image_folder --output-folder visualization/mega
 ```
