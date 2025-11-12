@@ -8,6 +8,9 @@ chmod +x install.sh
 2. Hacer:
 ```
 conda init
+```
+
+```
 conda activate MEGA
 ```
 
