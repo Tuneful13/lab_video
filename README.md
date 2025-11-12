@@ -2,7 +2,7 @@
 1.
 chmod +x install.sh
 
-./install.sh -y
+./install.sh
 
 
 2. Hacer:
