@@ -60,9 +60,6 @@ unset INSTALL_DIR
 # or if you are on macOS
 # MACOSX_DEPLOYMENT_TARGET=10.9 CC=clang CXX=clang++ python setup.py build develop
 
-# Activate conda environment
-conda activate MEGA
-
 # Make the necessary changes in the files as indicated
 
 # Edit mega.pytorch/mega_core/layers/nms.py
@@ -79,6 +76,3 @@ sed -i '56s/.*/# @amp.float_function/' mega.pytorch/mega_core/layers/roi_pool.py
 
 # Edit demo/predictor.py
 sed -i '611s/.*/                image, s, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2/' prueba.py
-
-# Execute demo.py as instructed
-python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/image_folder --output-video
