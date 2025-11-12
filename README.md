@@ -1,15 +1,16 @@
 
-1.
+1.Abrir una terminal donde tengas el archivo install.sh y ejecutar:
 chmod +x install.sh
 
 ./install.sh
 
 
-2. Hacer:
+2. Ejecutar:
 ```
 conda init
 ```
 
+3. Abrir otra terminal en la carpeta mega.pytorch y ejecutar:
 ```
 conda activate MEGA
 ```
@@ -101,3 +102,4 @@ A esto:
 ```
 (611)                image, s, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2
 ```
+Para poder meter como input un video poner la FLAG --video
