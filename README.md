@@ -2,13 +2,18 @@
 
 ./install.sh -y
 
-2. Meter las carpetas en mega.pytorch
 
-3. Hacer:
+2. Hacer:
+```
+conda init
 conda activate MEGA
+```
 
-4. Potenciales comentarios
+3. ### Ejecutamos lo siguiente:
+*python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG"     --visualize-path datasets/image_folder --output-video*
 
+
+(Estos son los cambios que hemos hecho)
 
 ### mega.pytorch/mega_core/layers/nms.py:
 
@@ -73,7 +78,3 @@ A esto:
 ```
 (611)                image, s, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2
 ```
-
-### Ejecutamos lo siguiente:
-
-*python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG"     --visualize-path datasets/image_folder --output-video*
