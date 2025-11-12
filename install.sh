@@ -75,4 +75,4 @@ sed -i '10s/.*/# from apex import amp/' mega.pytorch/mega_core/layers/roi_pool.p
 sed -i '56s/.*/# @amp.float_function/' mega.pytorch/mega_core/layers/roi_pool.py
 
 # Edit demo/predictor.py
-sed -i '611s/.*/                image, s, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2/' prueba.py
+sed -i '611s/.*/                image, s, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2/' mega.pytorch/demo/predictor.py
