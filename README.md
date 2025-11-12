@@ -15,10 +15,11 @@ conda init
 ```
 conda activate MEGA
 ```
-4. Descargar los modelos de drive:
+4. Descargar los modelos de drive y pegamos los dos archivos .pth en la carpeta de /mega.pytorch:
 https://drive.google.com/file/d/1W17f9GC60rHU47lUeOEfU--Ra-LTw3Tq/view
 
 https://drive.google.com/file/d/1ZnAdFafF1vW9Lnpw-RPF1AD_csw61lBY/view
+
 
 4. ### Ejecutamos lo siguiente:
 
