@@ -21,7 +21,7 @@ https://drive.google.com/file/d/1W17f9GC60rHU47lUeOEfU--Ra-LTw3Tq/view
 
 https://drive.google.com/file/d/1ZnAdFafF1vW9Lnpw-RPF1AD_csw61lBY/view
 
-5. Añadir la carpeta de moodle image_folder.zip y la descomprimimos en mega.pytorch/datasets
+5. Añadir la carpeta de moodle image_folder.zip y la descomprimimos en mega.pytorch/datasets. 
 
 4. ### Ejecutamos lo siguiente:
 
