@@ -112,7 +112,6 @@ A esto:
 (611)                image, s, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2
 ```
 
-
 ## Parte 2
 
 
@@ -120,3 +119,56 @@ Para poder meter como input un video poner la FLAG --video
 
 Seleccionamos videos de UCF101 y analizamos
 
+
+
+### v_WalkingWithDog_g10_c03.avi
+
+```
+python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_WalkingWithDog_g10_c03.avi --output-folder visualization/session_2/walking_dog_g10/base --output-video --video
+
+python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_WalkingWithDog_g10_c03.avi --output-folder visualization/session_2/walking_dog_g10/base --video
+
+python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_WalkingWithDog_g10_c03.avi --output-folder visualization/session_2/walking_dog_g10/mega --output-video --video
+
+python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_WalkingWithDog_g10_c03.avi --output-folder visualization/session_2/walking_dog_g10/mega --video
+
+```
+
+### v_WalkingWithDog_g01_c01.avi
+
+```
+python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_WalkingWithDog_g01_c01.avi --output-folder visualization/session_2/walking_dog_g01/base --output-video --video
+
+python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_WalkingWithDog_g01_c01.avi --output-folder visualization/session_2/walking_dog_g01/base --video
+
+python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_WalkingWithDog_g01_c01.avi --output-folder visualization/session_2/walking_dog_g01/mega --output-video --video
+
+python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_WalkingWithDog_g01_c01.avi --output-folder visualization/session_2/walking_dog_g01/mega --video
+
+```
+
+### v_HorseRiding_g10_c01.avi
+
+```
+python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_HorseRiding_g10_c01.avi --output-folder visualization/session_2/HorseRiding/base --output-video --video
+
+python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_HorseRiding_g10_c01.avi --output-folder visualization/session_2/HorseRiding/base --video
+
+python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_HorseRiding_g10_c01.avi --output-folder visualization/session_2/HorseRiding/mega --output-video --video
+
+python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/v_HorseRiding_g10_c01.avi --output-folder visualization/session_2/HorseRiding/mega --video
+
+```
+
+### internet.avi
+
+```
+python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/internet.avi --output-folder visualization/session_2/internet/base --output-video --video
+
+python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/internet.avi --output-folder visualization/session_2/internet/base --video
+
+python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/internet.avi --output-folder visualization/session_2/internet/mega --output-video --video
+
+python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --suffix ".JPEG" --visualize-path datasets/session_2/internet.avi --output-folder visualization/session_2/internet/mega --video
+
+```
