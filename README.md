@@ -33,7 +33,7 @@ This guide provides instructions to set up the environment, apply necessary code
 
 ## 2. Necessary Code Changes (Fixing Apex Compatibility)
 
-The original repository requires modifications to run on modern systems due to incompatible PyTorch and Apex versions. The following changes are already applied in the `install.sh` file:
+The original repository requires modifications to run on modern systems due to incompatible PyTorch and Apex versions. **The following changes are already applied in the `install.sh` file:**
 
 ### `mega.pytorch/mega_core/layers/nms.py`
 
