@@ -25,8 +25,8 @@ This guide provides instructions to set up the environment, apply necessary code
 ### B. Download Models and Data
 
 1.  **Download Pre-trained Models:** Download the following two model files (`.pth`) from Google Drive and place them directly into the `/mega.pytorch` folder.
-    * `R_101.pth`: [Link to R_101.pth]
-    * `MEGA_R_101.pth`: [Link to MEGA_R_101.pth]
+    * `BASE`: [https://drive.google.com/file/d/1W17f9GC60rHU47lUeOEfU--Ra-LTw3Tq/view]
+    * `MEGA`: [https://drive.google.com/file/d/1ZnAdFafF1vW9Lnpw-RPF1AD_csw61lBY/view]
 2.  **Download Session 1 Data:** Download the `image_folder.zip` file from Moodle and unzip its contents into the **`mega.pytorch/datasets`** folder.
 
 ---
